@@ -1,0 +1,24 @@
+.wrapper {
+  background-color: rgba(0, 100, 180, 1);
+  border-radius: 5%;
+  padding: 5%;
+  float: left;
+  border: solid 10px #99532F;
+
+}
+
+#board td {
+  //border: solid 1px black;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  height: 70px;
+  width: 70px;
+  box-sizing: border-box;
+  border-radius: 10%;
+  color: white;
+}
+
+#board td:hover {
+  border: solid 3px #A1D4F9;
+}
