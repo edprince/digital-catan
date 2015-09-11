@@ -36,5 +36,33 @@
     </tr>
   </table>
   </div>
+
+  <div class="player-info">
+    <ul class="list">
+      <li>Name: <b id="name"></b></li>
+      <li>Color: </li>
+      <li class='instruction-toggle'>
+        Instructions
+        <ul class='instructions'>
+          <li>The objective of this game is to reach 10 victory points.
+            These are rewarded for building settlements, cities and are on 
+            some development cards.
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="die">
+    <p id='die-roll'></p>
+    <button id="roll">Roll die</button>
+  </div>
+  <div class="game-commentary">
+    <ul id="update-list">
+    </ul>
+    <form id='chat-form'>
+      <input type='text' id='chat' placeholder='Send a message...' autocomplete='off'>
+      <button>Send</button>
+    </form>
+  </div>
   </body>
 </html>

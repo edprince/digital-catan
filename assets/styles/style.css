@@ -1,9 +1,17 @@
+body, html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: helvetica;
+}
 .wrapper {
   background-color: rgba(0, 100, 180, 1);
   border-radius: 5%;
   padding: 5%;
   float: left;
   border: solid 10px #99532F;
+  margin-left: 1%;
+  margin-top: 1%;
 
 }
 
@@ -21,4 +29,127 @@
 
 #board td:hover {
   border: solid 3px #A1D4F9;
+  cursor: pointer;
+}
+
+.die {
+  font-size: 2em;
+  width: 10%;
+  text-align: center;
+  padding-top: 5%;
+  margin: 0 auto;
+}
+
+#die-roll {
+  font-size: 2em;
+  padding: 0.33em;
+  margin-top: 0;
+  height: 1em;
+  width: 1em;
+  border-radius: 5px;
+  border: solid 2px #DDD;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.player-info {
+  width: 20%;
+  background-color: #2D3438;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+body {
+  padding-right: 20%;
+  box-sizing: border-box;
+}
+
+#roll {
+  border-radius: 3px;
+  height: 30px;
+  width: 100%;
+  border: solid 1px #AEAEAE;
+  -webkit-transition-duration: 0.4s;
+  margin: 0 auto;
+  font-weight: bold;
+}
+
+#roll:hover {
+  -webkit-transition-duration: 0.4s;
+  background-color: #3773DF;
+  color: white;
+}
+
+.list {
+  color: white;
+  padding-left: 0;
+}
+
+.list li {
+  border-bottom: solid 1px #595959;
+  width: 100%;
+  list-style: none;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 0.4em;
+}
+
+
+.instruction-toggle:active .instructions {
+  display: block;
+}
+
+.instructions {
+  padding-left: 0;
+  padding-right: .5em;
+  display: none;
+}
+.list li .instructions li {
+  margin-left: 0;
+  border: 0;
+}
+
+.game-commentary {
+  background-color: #DDD;
+  float: left;
+  width: 100%;
+  //padding-left: 2%;
+  margin-top: 1%;
+  height: 240px;
+  overflow-y: scroll;
+  border-top: solid 2px #BBBBBB;
+  position: relative;
+}
+
+#update-list {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+#update-list li {
+  border-bottom: solid 1px #C2C2C2;
+  margin-left: 0;
+  padding-left: 0.5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.game-commentary input {
+  position: absolute;
+  bottom: 0;
+  width: 80%;
+  height: 30px;
+  margin: 0;
+}
+.game-commentary button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 20%;
+  height: 36px;
+  margin: 0;
+  padding: 0;
 }
